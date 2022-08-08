@@ -10,6 +10,9 @@ export default function IndexPage() {
   return (
     <div className={cx('main')}>
       <Header />
+      <br />
+      <br />
+      <br />
       <Footer />
     </div>
   );

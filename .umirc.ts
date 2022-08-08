@@ -6,8 +6,19 @@ export default defineConfig({
     type: 'none'
   },
   routes: [{path: '/', component: '@/layouts'}],
-
+  // 指定输出路径
+  outputPath: '/dist',
+  // 本地开发API接口请求代理
+  proxy: {
+    '/api': {
+      target: 'http:www.xxx.com/',
+      changeOrigin: true,
+      pathRewrite: {'^/api': ''}
+    }
+  },
+  // 快速刷新(开发时可以保持组件状态，同时编辑提供即时反馈。)
   fastRefresh: {},
+
   extraPostCSSPlugins: [
     pxtoviewport({
       unitToConvert: 'px',
