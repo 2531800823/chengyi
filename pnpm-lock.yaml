@@ -7,6 +7,7 @@ specifiers:
   '@umijs/plugin-antd-mobile': ^1.2.0
   '@umijs/test': ^3.5.32
   antd-mobile: ^5.20.0
+  classnames: ^2.3.1
   lint-staged: ^10.0.7
   postcss-px-to-viewport: ^1.1.1
   prettier: ^2.2.0
@@ -19,6 +20,7 @@ specifiers:
 dependencies:
   '@ant-design/pro-layout': registry.npmmirror.com/@ant-design/pro-layout/6.38.17_sfoxds7t5ydpegc3knd667wn6m
   antd-mobile: registry.npmmirror.com/antd-mobile/5.20.0_sfoxds7t5ydpegc3knd667wn6m
+  classnames: registry.npmmirror.com/classnames/2.3.1
   react: registry.npmmirror.com/react/17.0.2
   react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
   umi: registry.npmmirror.com/umi/3.5.32

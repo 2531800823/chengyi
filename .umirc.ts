@@ -1,11 +1,12 @@
-import { defineConfig } from 'umi';
+import {defineConfig} from 'umi';
 import pxtoviewport from 'postcss-px-to-viewport';
 
 export default defineConfig({
   nodeModulesTransform: {
-    type: 'none',
+    type: 'none'
   },
-  routes: [{ path: '/', component: '@/pages/index' }],
+  routes: [{path: '/', component: '@/layouts'}],
+
   fastRefresh: {},
   extraPostCSSPlugins: [
     pxtoviewport({
@@ -23,7 +24,7 @@ export default defineConfig({
       include: undefined,
       landscape: false,
       landscapeUnit: 'vw',
-      landscapeWidth: 568,
-    }),
-  ],
+      landscapeWidth: 568
+    })
+  ]
 });
