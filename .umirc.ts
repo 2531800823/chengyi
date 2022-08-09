@@ -5,7 +5,7 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none'
   },
-  routes: [{path: '/', component: '@/layouts'}],
+  // routes: [{path: '/', component: '@/layouts'}],
   // 指定输出路径
   outputPath: '/dist',
   // 本地开发API接口请求代理

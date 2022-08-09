@@ -21,8 +21,10 @@
   },
   "dependencies": {
     "@ant-design/pro-layout": "^6.5.0",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "add": "^2.0.6",
     "antd-mobile": "^5.20.0",
-    "classnames": "^2.3.1",
     "react": "17.x",
     "react-dom": "17.x",
     "umi": "^3.5.32"
@@ -32,6 +34,7 @@
     "@types/react-dom": "^17.0.0",
     "@umijs/plugin-antd-mobile": "^1.2.0",
     "@umijs/test": "^3.5.32",
+    "amfe-flexible": "^2.2.1",
     "lint-staged": "^10.0.7",
     "postcss-px-to-viewport": "^1.1.1",
     "prettier": "^2.2.0",

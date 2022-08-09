@@ -1,13 +1,18 @@
-import React, {FC} from 'react';
-import App from '../pages';
-interface indexProps {}
-import '../global.css';
+import React, { FC, ReactNode } from 'react';
+import 'amfe-flexible';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
 
-const index: FC<indexProps> = props => {
-  const {} = props;
+interface indexProps {
+  children: ReactNode;
+}
+const index: FC<indexProps> = (props) => {
+  const { children } = props;
   return (
     <div>
-      <App />
+      <Header />
+      {children}
+      <Footer />
     </div>
   );
 };

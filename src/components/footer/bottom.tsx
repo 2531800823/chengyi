@@ -1,14 +1,11 @@
-import React, {FC} from 'react';
-import style from './index.less';
-import styles from 'classnames/bind';
-const cx = styles.bind(style);
+import { FC } from 'react';
 interface BottomProps {}
 
-const Bottom: FC<BottomProps> = props => {
+const Bottom: FC<BottomProps> = (props) => {
   const {} = props;
   console.log('Bottom');
   return (
-    <div className={cx('bottom')}>
+    <div className="bottom">
       {' '}
       {Array(4)
         .fill(0)
