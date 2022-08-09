@@ -2,7 +2,7 @@
 import { jsx } from '@emotion/react';
 import { FC } from 'react';
 import erWeiMa from '@/../public/images/7-页底/页底-二维码.png';
-import { MyInput } from './style';
+import { FooterText, MyInput } from './style';
 import { Button } from 'antd-mobile';
 import { vw } from '@/utils';
 interface topProps {}
@@ -47,6 +47,11 @@ const Top: FC<topProps> = (props) => {
           </Button>
         </div>
       </div>
+
+      <FooterText>
+        Copyright 2015-2022 all rights reserved 上海澄易网络科技有限公司版权所有
+        沪 ICP 备 12345678 号 -6
+      </FooterText>
     </div>
   );
 };

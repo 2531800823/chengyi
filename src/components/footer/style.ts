@@ -103,3 +103,10 @@ export const MyInput = styled.input<ClassAttributes<HTMLInputElement>>`
     color: #9b9b9b;
   }
 `;
+
+export const FooterText = styled.div`
+  margin: ${vw('35 0')};
+  text-align: center;
+  color: #a4a3a5;
+  font-size: ${vw(14)};
+`;
