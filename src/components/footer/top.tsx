@@ -1,11 +1,14 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/react';
 import { FC } from 'react';
 import erWeiMa from '@/../public/images/7-页底/页底-二维码.png';
-
+import { MyInput } from './style';
+import { Button } from 'antd-mobile';
+import { vw } from '@/utils';
 interface topProps {}
 
 const Top: FC<topProps> = (props) => {
   const {} = props;
-  console.log('top');
   return (
     <div className="top">
       <div className="lianxi">
@@ -20,11 +23,28 @@ const Top: FC<topProps> = (props) => {
           <p>邮箱: hz_tang@yeah.net</p>
         </div>
       </div>
+
       <div className="form">
         <h3>在线预约尊享贵宾体验</h3>
         <div className="inputs">
-          <input type="text" placeholder="姓名" />
-          <input type="text" placeholder="联系电话" />
+          <MyInput type="text" placeholder="姓名" />
+          <MyInput type="text" placeholder="联系电话" />
+        </div>
+        <div
+          css={{
+            marginTop: vw(37),
+            display: 'flex',
+            justifyContent: 'center'
+          }}>
+          <Button
+            block
+            shape="rounded"
+            style={{ width: vw(392), height: vw(80), textAlign: 'center' }}
+            color="primary">
+            <span css={{ fontSize: vw(36), fontWeight: 500, color: '#fff' }}>
+              提 交
+            </span>
+          </Button>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { vw } from '@/utils';
+import { ClassAttributes } from 'react';
 
 export const MainDiv = styled.div<{ img: any }>`
   box-sizing: border-box;
@@ -70,15 +71,35 @@ export const MainDiv = styled.div<{ img: any }>`
     .form {
       width: 100%;
       margin-top: ${vw(58)};
+      padding-bottom: ${vw(55)};
+      border-bottom: ${vw(1)} solid #656565;
       h3 {
         font-size: ${vw(32)};
         color: #fff;
         text-align: center;
+      }
+      .inputs {
+        margin: ${vw('42 74 0')};
       }
     }
   }
   .bottom {
     height: ${vw(172)};
     display: flex;
+  }
+`;
+
+export const MyInput = styled.input<ClassAttributes<HTMLInputElement>>`
+  width: 100%;
+  height: ${vw(80)};
+  outline: none;
+  border: none;
+  border-radius: ${vw(10)};
+  margin-bottom: ${vw(15)};
+  &::placeholder {
+    font-weight: 400;
+    padding-left: ${vw(45)};
+    font-size: ${vw(28)};
+    color: #9b9b9b;
   }
 `;
