@@ -5,7 +5,6 @@ import { ClassAttributes } from 'react';
 export const MainDiv = styled.div<{ img: any }>`
   box-sizing: border-box;
   width: 100%;
-  height: ${vw(1160)};
   padding: ${vw('0 20')};
   background-color: pink;
   background: url(${(props) => props.img});
@@ -14,19 +13,16 @@ export const MainDiv = styled.div<{ img: any }>`
   .top {
     width: 100%;
     box-sizing: border-box;
-    height: ${vw(990)};
     padding: ${vw('0 80')};
     padding-top: ${vw(110)};
 
     .lianxi {
       padding-bottom: ${vw(45)};
       border-bottom: ${vw(1)} solid #656565;
-      height: ${vw(310)};
       display: flex;
 
       .left {
         width: ${vw(360)};
-        height: ${vw(265)};
         border-right: ${vw(1)} solid #656565;
         font-size: 0;
         img {
@@ -92,20 +88,22 @@ export const MainDiv = styled.div<{ img: any }>`
 export const MyInput = styled.input<ClassAttributes<HTMLInputElement>>`
   width: 100%;
   height: ${vw(80)};
+  min-height: 26.8px;
   outline: none;
   border: none;
   border-radius: ${vw(10)};
+  font-size: ${vw(28)};
   margin-bottom: ${vw(15)};
   &::placeholder {
     font-weight: 400;
     padding-left: ${vw(45)};
-    font-size: ${vw(28)};
     color: #9b9b9b;
   }
 `;
 
 export const FooterText = styled.div`
-  margin: ${vw('35 0')};
+  margin-top: ${vw(35)};
+  padding-bottom: ${vw(35)};
   text-align: center;
   color: #a4a3a5;
   font-size: ${vw(14)};

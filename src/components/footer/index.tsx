@@ -10,10 +10,12 @@ const Footer: FC<FooterProps> = (props) => {
   const {} = props;
   console.log('Footer');
   return (
-    <MainDiv img={bgImg}>
-      <Top />
+    <div>
+      <MainDiv img={bgImg}>
+        <Top />
+      </MainDiv>
       <Bottom />
-    </MainDiv>
+    </div>
   );
 };
 
