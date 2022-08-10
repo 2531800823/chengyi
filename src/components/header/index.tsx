@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 
 import { WapperDiv } from './style';
 
@@ -8,14 +8,12 @@ import Call from '@/../public/images/1-页头/head-电话.png';
 
 interface HeaderProps {}
 
-const Header: FC<HeaderProps> = (props) => {
-  return (
-    <WapperDiv>
-      <img src={Nav} alt="导航" />
-      <img src={Logo} className="logo" alt="logo" />
-      <img src={Call} alt="电话" />
-    </WapperDiv>
-  );
-};
+const Header: FC<HeaderProps> = () => (
+  <WapperDiv>
+    <img src={Nav} alt="导航" />
+    <img src={Logo} className="logo" alt="logo" />
+    <img src={Call} alt="电话" />
+  </WapperDiv>
+);
 
-export default Header;
+export default memo(Header);

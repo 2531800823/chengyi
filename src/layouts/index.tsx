@@ -13,7 +13,6 @@ const index: FC<indexProps> = (props) => {
   return (
     <div>
       <Header />
-
       {children}
       <Footer />
     </div>

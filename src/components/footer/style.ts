@@ -106,5 +106,5 @@ export const FooterText = styled.div`
 `;
 
 export const FooterNavber = styled.div`
-  /* height: ${vw(172)}; */
+  background-color: #2e6cf2;
 `;
