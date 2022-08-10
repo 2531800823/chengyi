@@ -10,6 +10,7 @@ const tabBarTitles = [
     title: '首页',
     img: Home,
     onClick: () => {
+      window.scrollTo(0, 0);
       history.push('/');
     }
   },
