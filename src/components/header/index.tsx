@@ -8,12 +8,10 @@ import Call from '@/../public/images/1-页头/head-电话.png';
 
 interface HeaderProps {}
 
-const Header: FC<HeaderProps> = () => (
+export const Header: FC<HeaderProps> = memo(() => (
   <WapperDiv>
     <img src={Nav} alt="导航" />
     <img src={Logo} className="logo" alt="logo" />
     <img src={Call} alt="电话" />
   </WapperDiv>
-);
-
-export default memo(Header);
+));

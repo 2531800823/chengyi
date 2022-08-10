@@ -6,13 +6,11 @@ import bgImg from '@/../public/images/7-页底/页底-bg.png';
 
 interface FooterProps {}
 
-const Footer: FC<FooterProps> = (props) => (
+export const Footer: FC<FooterProps> = memo(() => (
   <div>
     <MainDiv img={bgImg}>
       <Top />
     </MainDiv>
     <Bottom />
   </div>
-);
-
-export default memo(Footer);
+));
