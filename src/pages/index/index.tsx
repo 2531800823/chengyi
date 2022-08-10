@@ -1,5 +1,3 @@
-import { Button } from 'antd-mobile';
-
 export default function IndexPage() {
   return (
     <div>

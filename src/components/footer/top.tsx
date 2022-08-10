@@ -3,7 +3,7 @@ import { jsx } from '@emotion/react';
 import { FC } from 'react';
 import erWeiMa from '@/../public/images/7-页底/页底-二维码.png';
 import { FooterText, MyInput } from './style';
-import { Button } from 'antd-mobile';
+import { Button } from '@arco-design/mobile-react';
 import { vw } from '@/utils';
 interface topProps {}
 
@@ -32,18 +32,20 @@ const Top: FC<topProps> = (props) => {
         </div>
         <div
           css={{
-            marginTop: vw(37),
+            marginTop: vw(30),
             display: 'flex',
             justifyContent: 'center'
           }}>
           <Button
-            block
-            shape="rounded"
-            style={{ width: vw(392), height: vw(80), textAlign: 'center' }}
-            color="primary">
-            <span css={{ fontSize: vw(36), fontWeight: 500, color: '#fff' }}>
-              提 交
-            </span>
+            inline
+            shape="round"
+            style={{
+              width: vw(392),
+              fontSize: vw(36),
+              fontWeight: 500,
+              color: '#fff'
+            }}>
+            提 交
           </Button>
         </div>
       </div>

@@ -79,10 +79,6 @@ export const MainDiv = styled.div<{ img: any }>`
       }
     }
   }
-  .bottom {
-    height: ${vw(172)};
-    display: flex;
-  }
 `;
 
 export const MyInput = styled.input<ClassAttributes<HTMLInputElement>>`
@@ -107,4 +103,8 @@ export const FooterText = styled.div`
   text-align: center;
   color: #a4a3a5;
   font-size: ${vw(14)};
+`;
+
+export const FooterNavber = styled.div`
+  /* height: ${vw(172)}; */
 `;
