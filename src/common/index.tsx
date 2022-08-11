@@ -46,3 +46,18 @@ export const tabBarItem = tabBarTitles.map((item) => ({
     </p>
   )
 }));
+
+export const menuStatic = [
+  { name: '首页', key: '/' },
+  { name: '体验咨询', key: '/experience' },
+  {
+    name: '产品服务',
+    children: [
+      { name: '推广托管', key: '/promotion' },
+      { name: '口碑营销', key: '/praise' },
+      { name: '系统开发', key: '/develop' }
+    ]
+  },
+  { name: '关于澄易', key: '/about' },
+  { name: '新闻资讯', key: '/news' }
+];
