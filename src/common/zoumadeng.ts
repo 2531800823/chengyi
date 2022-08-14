@@ -83,7 +83,7 @@ export const DataZou = [
         }
       },
       {
-        id: 8,
+        id: 12,
         url: Banner3Font,
         style: {
           width: vw(435),
