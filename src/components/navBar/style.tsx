@@ -8,7 +8,7 @@ interface IWapperNar {
 export const WapperNar = styled.div<IWapperNar>`
   display: ${(props) => (props.show ? 'block' : 'none')};
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   top: ${vw(174)};
   width: 100%;
   height: calc(100vh - ${vw(174)});
@@ -18,6 +18,7 @@ export const WapperNar = styled.div<IWapperNar>`
 `;
 
 export const WapperNarItem = styled.div`
+  background-color: #fff;
   height: ${vw(145)};
   width: 100%;
   border-bottom: ${vw(2)} solid #e5e5e5;

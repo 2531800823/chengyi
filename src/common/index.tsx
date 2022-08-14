@@ -1,7 +1,7 @@
-import Home from '@/../public/images/7-页底/页底-首页-1.png';
-import Call from '@/../public/images/7-页底/页底-电话-2.png';
-import Consult from '@/../public/images/7-页底/页底-咨询-3.png';
-import Diagnose from '@/../public/images/7-页底/页底-诊断-4.png';
+import Home from '@/assets/images/7-页底/页底-首页-1.png';
+import Call from '@/assets/images/7-页底/页底-电话-2.png';
+import Consult from '@/assets/images/7-页底/页底-咨询-3.png';
+import Diagnose from '@/assets/images/7-页底/页底-诊断-4.png';
 import { vw } from '@/utils';
 import { history } from 'umi';
 const tabBarTitles = [

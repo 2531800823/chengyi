@@ -5,6 +5,7 @@ import Arco from '@arco-design/mobile-react';
 import '@arco-design/mobile-react/esm/style';
 import { useScroll } from 'ahooks';
 import NavBar from '@/components/navBar';
+import Zoumadeng from '@/components/Zoumadeng';
 
 export const NarBarData = createContext({
   isShowNar: false,
@@ -30,6 +31,7 @@ const index: FC<indexProps> = memo((props) => {
         <Header />
         <NavBar />
         {isScroll && <ScrollTop />}
+        <Zoumadeng />
         {children}
         <Footer />
       </div>

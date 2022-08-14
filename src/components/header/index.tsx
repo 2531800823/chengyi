@@ -2,10 +2,10 @@ import { FC, memo, useContext } from 'react';
 
 import { WapperDiv } from './style';
 
-import Line from '@/../public/images/移动端-导航栏下拉框/直线-1-拷贝.png';
-import Logo from '@/../public/images/1-页头/head-logo.png';
-import Nav from '@/../public/images/1-页头/head-导航.png';
-import Call from '@/../public/images/1-页头/head-电话.png';
+import Line from '@/assets/images/移动端-导航栏下拉框/直线-1-拷贝.png';
+import Logo from '@/assets/images/1-页头/head-logo.png';
+import Nav from '@/assets/images/1-页头/head-导航.png';
+import Call from '@/assets/images/1-页头/head-电话.png';
 import { NarBarData } from '@/layouts';
 
 interface HeaderProps {}

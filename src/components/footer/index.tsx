@@ -2,7 +2,7 @@ import { FC, memo } from 'react';
 import Top from './top';
 import Bottom from './bottom';
 import { MainDiv } from './style';
-import bgImg from '@/../public/images/7-页底/页底-bg.png';
+import bgImg from '@/assets/images/7-页底/页底-bg.png';
 
 interface FooterProps {}
 

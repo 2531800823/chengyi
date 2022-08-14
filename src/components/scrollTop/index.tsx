@@ -2,7 +2,7 @@ import React, { FC, memo } from 'react';
 import styled from '@emotion/styled';
 import { vw } from '@/utils';
 
-import BackTop from '@/../public/images/7-页底/返回顶部.png';
+import BackTop from '@/assets/images/7-页底/返回顶部.png';
 
 interface ScrollTopProps {}
 
@@ -19,4 +19,5 @@ const ScrollTopDiv = styled.img`
   right: ${vw(20)};
   width: ${vw(80)};
   height: ${vw(80)};
+  z-index: 1000;
 `;

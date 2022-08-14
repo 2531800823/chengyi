@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/react';
 import { FC } from 'react';
-import erWeiMa from '@/../public/images/7-页底/页底-二维码.png';
+import erWeiMa from '@/assets/images/7-页底/页底-二维码.png';
 import { FooterText, MyInput } from './style';
 import { Button } from '@arco-design/mobile-react';
 import { vw } from '@/utils';

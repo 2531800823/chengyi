@@ -3,11 +3,11 @@ import { WapperNarItem } from './style';
 import { vw } from '@/utils';
 import { history } from 'umi';
 
-import Rect from '@/../public/images/移动端-导航栏下拉框/移动端导航页_0000_矩形-14-拷贝.png';
-import Rect2 from '@/../public/images/移动端-导航栏下拉框/移动端导航页_0001_矩形-14-拷贝-2.png';
-import Oval from '@/../public/images/移动端-导航栏下拉框/移动端导航页_0002_椭圆-2-拷贝-4.png';
-import Oval2 from '@/../public/images/移动端-导航栏下拉框/移动端导航页_0003_椭圆-2-拷贝.png';
-import Rect3 from '@/../public/images/移动端-导航栏下拉框/移动端导航页_0004_矩形-15.png';
+import Rect from '@/assets/images/移动端-导航栏下拉框/移动端导航页_0000_矩形-14-拷贝.png';
+import Rect2 from '@/assets/images/移动端-导航栏下拉框/移动端导航页_0001_矩形-14-拷贝-2.png';
+import Oval from '@/assets/images/移动端-导航栏下拉框/移动端导航页_0002_椭圆-2-拷贝-4.png';
+import Oval2 from '@/assets/images/移动端-导航栏下拉框/移动端导航页_0003_椭圆-2-拷贝.png';
+import Rect3 from '@/assets/images/移动端-导航栏下拉框/移动端导航页_0004_矩形-15.png';
 import { NarBarData } from '@/layouts';
 
 interface ItemProps {
