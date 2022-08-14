@@ -1,5 +1,6 @@
-import React, { FC, memo } from 'react';
+import { FC, memo } from 'react';
 import { AboutImg, AboutText, MyABoutDiv } from './style';
+import { history } from 'umi';
 
 import Font from '@/assets/images/3-关于我们/font.png';
 import About from '@/assets/images/3-关于我们/关于我们-pic.png';
@@ -22,7 +23,10 @@ const MyABout: FC<MyABoutProps> = memo(() => (
       <Button
         inline
         shape="round"
-        style={{ margin: vw('40 0 115 0'), width: vw(390) }}>
+        style={{ margin: vw('40 0 115 0'), width: vw(390) }}
+        onClick={() => {
+          history.push('/about');
+        }}>
         了解更多
       </Button>
     </AboutImg>
