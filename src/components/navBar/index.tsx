@@ -6,7 +6,7 @@ import { NarBarData } from '@/layouts';
 
 interface NavBarProps {}
 
-const NavBar: FC<NavBarProps> = memo(() => {
+export const NavBar: FC<NavBarProps> = memo(() => {
   const [active, setActive] = useState(menuStatic[0].name);
   const [childShow, setChildShow] = useState(false);
   const state = useContext(NarBarData);
@@ -30,5 +30,3 @@ const NavBar: FC<NavBarProps> = memo(() => {
     </WapperNar>
   );
 });
-
-export default NavBar;

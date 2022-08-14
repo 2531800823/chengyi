@@ -9,7 +9,7 @@ import Left from '@/assets/images/2-banner/左箭头.png';
 
 import { DataZou } from '@/common/zoumadeng';
 
-const Zoumadeng = () => {
+export const Zoumadeng = memo(() => {
   const [, setCurrentIndex] = useState(0);
   const carouselRef = useRef<any>(null);
 
@@ -72,5 +72,4 @@ const Zoumadeng = () => {
       </HomeNav>
     </HomeZou>
   );
-};
-export default memo(Zoumadeng);
+});

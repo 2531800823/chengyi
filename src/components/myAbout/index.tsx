@@ -1,18 +1,18 @@
 import { FC, memo } from 'react';
-import { AboutImg, AboutText, MyABoutDiv } from './style';
+import { AboutImg, AboutText } from './style';
 import { history } from 'umi';
 
 import Font from '@/assets/images/3-关于我们/font.png';
 import About from '@/assets/images/3-关于我们/关于我们-pic.png';
 import { Button } from '@arco-design/mobile-react';
 import { vw } from '@/utils';
+import { MyText } from '../text';
 interface MyABoutProps {}
 
-const MyABout: FC<MyABoutProps> = memo(() => (
+export const MyABout: FC<MyABoutProps> = memo(() => (
   <div>
-    <MyABoutDiv>
-      <img src={Font} alt="" />
-    </MyABoutDiv>
+    <MyText url={Font} />
+
     <AboutImg>
       <img src={About} alt="" />
     </AboutImg>
@@ -38,5 +38,3 @@ const MyABout: FC<MyABoutProps> = memo(() => (
       }}></div>
   </div>
 ));
-
-export default MyABout;
