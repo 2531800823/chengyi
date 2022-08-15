@@ -7,6 +7,7 @@ specifiers:
   '@emotion/styled': ^11.10.0
   '@types/react': ^17.0.0
   '@types/react-dom': ^17.0.0
+  '@types/uuid': ^8.3.4
   '@umijs/plugin-antd-mobile': ^1.2.0
   '@umijs/test': ^3.5.32
   add: ^2.0.6
@@ -18,9 +19,9 @@ specifiers:
   react: 17.x
   react-dom: 17.x
   react-transition-group: ^4.4.5
-  swiper: ^8.3.2
   typescript: ^4.1.2
   umi: ^3.5.32
+  uuid: ^8.3.2
   yorkie: ^2.0.0
 
 dependencies:
@@ -33,12 +34,13 @@ dependencies:
   react: registry.npmmirror.com/react/17.0.2
   react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
   react-transition-group: registry.npmmirror.com/react-transition-group/4.4.5_sfoxds7t5ydpegc3knd667wn6m
-  swiper: registry.npmmirror.com/swiper/8.3.2
   umi: registry.npmmirror.com/umi/3.5.32
+  uuid: registry.npmmirror.com/uuid/8.3.2
 
 devDependencies:
   '@types/react': registry.npmmirror.com/@types/react/17.0.48
   '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.17
+  '@types/uuid': registry.npmmirror.com/@types/uuid/8.3.4
   '@umijs/plugin-antd-mobile': registry.npmmirror.com/@umijs/plugin-antd-mobile/1.2.0_zb7q6mihkrodbj6zvbbicfdd7u
   '@umijs/test': registry.npmmirror.com/@umijs/test/3.5.32
   amfe-flexible: registry.npmmirror.com/amfe-flexible/2.2.1
@@ -1390,6 +1392,12 @@ packages:
     resolution: {integrity: sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/stack-utils/-/stack-utils-2.0.1.tgz}
     name: '@types/stack-utils'
     version: 2.0.1
+    dev: true
+
+  registry.npmmirror.com/@types/uuid/8.3.4:
+    resolution: {integrity: sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/uuid/-/uuid-8.3.4.tgz}
+    name: '@types/uuid'
+    version: 8.3.4
     dev: true
 
   registry.npmmirror.com/@types/yargs-parser/21.0.0:
@@ -3323,14 +3331,6 @@ packages:
     dependencies:
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.18.9
       csstype: registry.npmmirror.com/csstype/3.1.0
-    dev: false
-
-  registry.npmmirror.com/dom7/4.0.4:
-    resolution: {integrity: sha512-DSSgBzQ4rJWQp1u6o+3FVwMNnT5bzQbMb+o31TjYYeRi05uAcpF8koxdfzeoe5ElzPmua7W7N28YJhF7iEKqIw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/dom7/-/dom7-4.0.4.tgz}
-    name: dom7
-    version: 4.0.4
-    dependencies:
-      ssr-window: registry.npmmirror.com/ssr-window/4.0.2
     dev: false
 
   registry.npmmirror.com/domain-browser/1.2.0:
@@ -8400,12 +8400,6 @@ packages:
     name: sprintf-js
     version: 1.0.3
 
-  registry.npmmirror.com/ssr-window/4.0.2:
-    resolution: {integrity: sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ssr-window/-/ssr-window-4.0.2.tgz}
-    name: ssr-window
-    version: 4.0.2
-    dev: false
-
   registry.npmmirror.com/stack-utils/2.0.5:
     resolution: {integrity: sha512-xrQcmYhOsn/1kX+Vraq+7j4oE2j/6BFscZ0etmYg81xuM8Gq0022Pxb8+IqgOFUIaxHs0KaSb7T1+OegiNrNFA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/stack-utils/-/stack-utils-2.0.5.tgz}
     name: stack-utils
@@ -8612,17 +8606,6 @@ packages:
     name: supports-preserve-symlinks-flag
     version: 1.0.0
     engines: {node: '>= 0.4'}
-
-  registry.npmmirror.com/swiper/8.3.2:
-    resolution: {integrity: sha512-8wsC7ORYvVSnLUoxs2+xmfLrDPNjBVQXMCFbOlqtHeON6wtu/blOyySDr8TCBCdse1bdcIbn7m8xJNxVFL8o4Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/swiper/-/swiper-8.3.2.tgz}
-    name: swiper
-    version: 8.3.2
-    engines: {node: '>= 4.7.0'}
-    requiresBuild: true
-    dependencies:
-      dom7: registry.npmmirror.com/dom7/4.0.4
-      ssr-window: registry.npmmirror.com/ssr-window/4.0.2
-    dev: false
 
   registry.npmmirror.com/swr/1.3.0_react@17.0.2:
     resolution: {integrity: sha512-dkghQrOl2ORX9HYrMDtPa7LTVHJjCTeZoB1dqTbnnEDlSvN8JEKpYIYurDfvbQFUUS8Cg8PceFVZNkW0KNNYPw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/swr/-/swr-1.3.0.tgz}
@@ -9031,8 +9014,6 @@ packages:
     name: uuid
     version: 8.3.2
     hasBin: true
-    dev: true
-    optional: true
 
   registry.npmmirror.com/v8-compile-cache/2.3.0:
     resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz}

@@ -16,6 +16,7 @@ export const HomeNav = styled.div`
     width: ${vw(50)};
     height: ${vw(50)};
     position: absolute;
+    z-index: 3;
     top: 50%;
     transform: translateY(-50%);
     &:nth-of-type(1) {

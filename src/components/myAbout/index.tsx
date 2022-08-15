@@ -11,7 +11,7 @@ interface MyABoutProps {}
 
 export const MyABout: FC<MyABoutProps> = memo(() => (
   <div>
-    <MyText url={Font} />
+    <MyText url={Font} width={515} height={140} />
 
     <AboutImg>
       <img src={About} alt="" />
@@ -30,11 +30,5 @@ export const MyABout: FC<MyABoutProps> = memo(() => (
         了解更多
       </Button>
     </AboutImg>
-    <div
-      style={{
-        width: '100%',
-        height: vw(20),
-        backgroundColor: '#E5E5E5'
-      }}></div>
   </div>
 ));

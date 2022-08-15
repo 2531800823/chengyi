@@ -8,43 +8,47 @@ import Right from '@/assets/images/2-banner/右箭头.png';
 import Left from '@/assets/images/2-banner/左箭头.png';
 
 import { DataZou } from '@/common/zoumadeng';
+import { useRequest } from 'ahooks';
 
 export const Zoumadeng = memo(() => {
-  const [, setCurrentIndex] = useState(0);
+  const current = useRef(0);
   const carouselRef = useRef<any>(null);
 
-  const handleClickHoggle = (e: MouseEvent) => {
-    const event = e || window.event;
-    const method = (event.target as HTMLImageElement)?.getAttribute('data-set');
-    switch (method) {
-      case 'left':
-        setCurrentIndex((prev) => {
-          const index = prev === 4 ? 0 : prev + 1;
+  const { run: handleClickHoggle } = useRequest(
+    async (e: MouseEvent) => {
+      const event = e || window.event;
+      const method =
+        event.target &&
+        (event.target as HTMLImageElement)?.getAttribute('data-set');
+      let index = 0;
+      switch (method) {
+        case 'left':
+          index = current.current === 5 ? 0 : current.current + 1;
           carouselRef?.current?.changeIndex(index);
+          current.current = index;
 
-          return index;
-        });
-        break;
-      case 'right':
-        setCurrentIndex((prev) => {
-          const index = prev === 0 ? 4 : prev - 1;
+          break;
+        case 'right':
+          index = current.current === -1 ? 5 : current.current - 1;
           carouselRef?.current?.changeIndex(index);
-
-          return index;
-        });
-        break;
+          current.current = index;
+          break;
+      }
+    },
+    {
+      throttleWait: 300,
+      manual: true
     }
-  };
+  );
 
   return (
     <HomeZou>
       <Carousel
         ref={carouselRef as any}
         style={{ position: 'relative' }}
-        autoPlay={false}
+        autoPlay={true}
         onChange={(index) => {
-          setCurrentIndex(index);
-          console.log(index);
+          current.current = index;
         }}
         renderIndicator={(current, total) => (
           <img
