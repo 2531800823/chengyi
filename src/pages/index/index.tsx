@@ -1,9 +1,9 @@
-import { useState, MouseEvent, useRef, memo } from 'react';
-import { vw } from '@/utils';
+import { memo } from 'react';
 
 import { MyABout } from '@/components';
 import ProServe from './serverZou';
 import ServerFlow from './serverFlow';
+import XinWen from './xinWen';
 
 const IndexPage = () => {
   return (
@@ -11,6 +11,7 @@ const IndexPage = () => {
       <MyABout />
       <ProServe />
       <ServerFlow />
+      <XinWen />
     </>
   );
 };
