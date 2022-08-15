@@ -1,5 +1,5 @@
 import { MyText } from '@/components/text';
-import { FC, useRef, useState, MouseEvent } from 'react';
+import { FC, useRef, MouseEvent, memo } from 'react';
 
 import Font from '@/assets/images/4-产品服务/font.png';
 import { vw } from '@/utils';
@@ -10,12 +10,11 @@ import { useRequest } from 'ahooks';
 
 import Left from '@/assets/images/4-产品服务/右箭头.png';
 import Right from '@/assets/images/4-产品服务/左箭头.png';
-import { HomeZouStatic } from '@/common/homeZou';
+import { HomeZouStatic } from '@/common';
 
 interface ProServeProps {}
 
-const ProServe: FC<ProServeProps> = (props) => {
-  const {} = props;
+const ProServe: FC<ProServeProps> = memo(() => {
   const current = useRef(0);
 
   const carouselRef = useRef<any>(null);
@@ -102,6 +101,6 @@ const ProServe: FC<ProServeProps> = (props) => {
       </ZouServer>
     </div>
   );
-};
+});
 
 export default ProServe;

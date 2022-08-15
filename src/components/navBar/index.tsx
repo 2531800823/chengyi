@@ -1,8 +1,8 @@
-import { menuStatic } from '@/common';
 import { FC, useState, Fragment, useContext, memo } from 'react';
 import { WapperNar } from './style';
 import Item from './item';
 import { NarBarData } from '@/layouts';
+import { menuStatic } from '@/common';
 
 interface NavBarProps {}
 

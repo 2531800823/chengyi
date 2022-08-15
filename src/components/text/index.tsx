@@ -8,11 +8,8 @@ interface MyTextProps {
   height: number;
 }
 
-export const MyText: FC<MyTextProps> = memo(({ url, width, height }) => {
-  console.log('MyText');
-  return (
-    <MyABoutDiv>
-      <img src={url} style={{ width: vw(width), height: vw(height) }} alt="" />
-    </MyABoutDiv>
-  );
-});
+export const MyText: FC<MyTextProps> = memo(({ url, width, height }) => (
+  <MyABoutDiv>
+    <img src={url} style={{ width: vw(width), height: vw(height) }} alt="" />
+  </MyABoutDiv>
+));

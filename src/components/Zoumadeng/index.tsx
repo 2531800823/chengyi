@@ -7,7 +7,7 @@ import TOBottom from '@/assets/images/2-banner/向下滑动.png';
 import Right from '@/assets/images/2-banner/右箭头.png';
 import Left from '@/assets/images/2-banner/左箭头.png';
 
-import { DataZou } from '@/common/zoumadeng';
+import { DataZou } from '@/common';
 import { useRequest } from 'ahooks';
 
 export const Zoumadeng = memo(() => {
