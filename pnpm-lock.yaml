@@ -16,6 +16,7 @@ specifiers:
   lint-staged: ^10.0.7
   postcss-px-to-viewport: ^1.1.1
   prettier: ^2.2.0
+  rc-pagination: ^3.1.17
   react: 17.x
   react-dom: 17.x
   react-transition-group: ^4.4.5
@@ -31,6 +32,7 @@ dependencies:
   '@emotion/styled': registry.npmmirror.com/@emotion/styled/11.10.0_wiynxy2xmewqltyl3r22mlxgsm
   add: registry.npmmirror.com/add/2.0.6
   ahooks: registry.npmmirror.com/ahooks/3.7.0_react@17.0.2
+  rc-pagination: registry.npmmirror.com/rc-pagination/3.1.17_sfoxds7t5ydpegc3knd667wn6m
   react: registry.npmmirror.com/react/17.0.2
   react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
   react-transition-group: registry.npmmirror.com/react-transition-group/4.4.5_sfoxds7t5ydpegc3knd667wn6m

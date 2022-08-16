@@ -5,7 +5,8 @@ import { TabDiv, TabDivShu, Wapper, XinWenItemDiv } from './style';
 import Img from '@/assets/images/5-新闻资讯/news.png';
 import Img2 from '@/assets/images/5-新闻资讯/jiantou.png';
 import { vw } from '@/utils';
-
+import Pagination from 'rc-pagination';
+import 'rc-pagination/assets/index.css';
 interface NewsProps {}
 const tabData = [
   { title: '营销观点' },
@@ -15,7 +16,10 @@ const tabData = [
 const News: FC<NewsProps> = (props) => {
   const {} = props;
   const [active, setActive] = useState(0);
-  console.log('News');
+  const [current, setCurrent] = useState(1);
+  const onChange = (page: number) => {
+    setCurrent(page);
+  };
   const hanldeClick = (index: number) => {
     setActive(index);
   };
@@ -79,6 +83,15 @@ const News: FC<NewsProps> = (props) => {
             </div>
           ))}
       </Tabs>
+
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          marginTop: vw(65)
+        }}>
+        <Pagination onChange={onChange} current={current} total={2500} />
+      </div>
     </Wapper>
   );
 };
