@@ -6,7 +6,7 @@ import { history } from 'umi';
 
 import Font from '@/assets/images/5-新闻资讯/xinFont.png';
 import Img from '@/assets/images/5-新闻资讯/news.png';
-import { TabDiv, Wapper, XinWenItemDiv } from '../style';
+import { TabDiv, Wapper, XinWenItemDiv } from './style';
 
 const tabData = [
   { title: '营销观点' },
