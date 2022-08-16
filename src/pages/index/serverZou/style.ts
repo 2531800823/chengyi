@@ -6,8 +6,6 @@ export const ZouServer = styled.div`
   position: relative;
   top: ${vw(-30)};
   z-index: 1;
-
-  /* position: relative; */
 `;
 
 export const ZouDiv = styled.div`

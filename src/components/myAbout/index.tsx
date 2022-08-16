@@ -30,5 +30,12 @@ export const MyABout: FC<MyABoutProps> = memo(() => (
         了解更多
       </Button>
     </AboutImg>
+    <div
+      style={{
+        height: vw(20),
+        width: '100%',
+        backgroundColor: '#E5E5E5'
+      }}
+    />
   </div>
 ));
