@@ -50,3 +50,62 @@ export const AppDiv = styled.div`
     }
   }
 `;
+
+export const DevelopDiv = styled.div`
+  margin: ${vw('0 50 100')};
+  background-color: #3172f5;
+  border-radius: ${vw(20)};
+  height: ${vw(535)};
+
+  display: flex;
+
+  .text {
+    width: ${vw(370)};
+    color: #fff;
+    padding-top: ${vw(100)};
+    padding-left: ${vw(40)};
+    h2 {
+      font-size: ${vw(66)};
+    }
+    h3 {
+      font-size: ${vw(46)};
+      margin-bottom: ${vw(25)};
+    }
+    p {
+      font-size: ${vw(30)};
+      margin-right: ${vw(30)};
+    }
+  }
+
+  .icons {
+    border-radius: ${vw(20)};
+    flex: 1;
+    margin: ${vw(10)};
+    border: ${vw(2)} solid #cbcbcb;
+    background-color: #fff;
+
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      height: 20%;
+      border-top: ${vw(2)} solid #cbcbcb;
+      &:nth-of-type(1) {
+        border-top: none;
+      }
+      .item {
+        width: 50%;
+        border-left: ${vw(2)} solid #cbcbcb;
+        &:nth-of-type(1) {
+          border-left: none;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          font-size: ${vw(26)};
+          margin-left: ${vw(15)};
+        }
+      }
+    }
+  }
+`;

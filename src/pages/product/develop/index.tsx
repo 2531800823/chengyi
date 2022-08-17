@@ -1,4 +1,7 @@
 import { FC, memo } from 'react';
+import { MyText } from '@/components/text';
+import { AppDiv, DevelopDiv, Wapper } from './style';
+import { vw } from '@/utils';
 
 import Font from '@/assets/images/3-产品服务/1-系统开发/KfFont.png';
 import Font2 from '@/assets/images/3-产品服务/1-系统开发/KfFont2.png';
@@ -7,9 +10,17 @@ import Img1 from '@/assets/images/3-产品服务/1-系统开发/app开发-bg.png
 import Img2 from '@/assets/images/3-产品服务/1-系统开发/关于我们-网站策划.png';
 import Img3 from '@/assets/images/3-产品服务/1-系统开发/关于我们-网站设计.png';
 import Img4 from '@/assets/images/3-产品服务/1-系统开发/关于我们-营销性功能开发.png';
-import { MyText } from '@/components/text';
-import { AppDiv, Wapper } from './style';
-import { vw } from '@/utils';
+
+import Icon1 from '@/assets/images/3-CRM开发/1-效果-财务管理.png';
+import Icon2 from '@/assets/images/3-CRM开发/2-效果-库存管理.png';
+import Icon3 from '@/assets/images/3-CRM开发/3-效果-ERP接口.png';
+import Icon4 from '@/assets/images/3-CRM开发/4-效果-项目管理.png';
+import Icon5 from '@/assets/images/3-CRM开发/5-效果-采购管理.png';
+import Icon6 from '@/assets/images/3-CRM开发/6-效果-企业微信-.png';
+import Icon7 from '@/assets/images/3-CRM开发/7-效果-呼叫中心.png';
+import Icon8 from '@/assets/images/3-CRM开发/8-售后管理-.png';
+import Icon9 from '@/assets/images/3-CRM开发/9-效果-OA审批.png';
+import Icon10 from '@/assets/images/3-CRM开发/10-效果-平台管理.png';
 
 interface DevelopProps {}
 
@@ -55,6 +66,66 @@ const Develop: FC<DevelopProps> = memo(() => (
     </AppDiv>
 
     <MyText url={Font3} width={750} height={140} />
+
+    <DevelopDiv>
+      <div className="text">
+        <h2>CRM系统</h2>
+        <h3>一体化解决方案</h3>
+        <p>致力于为中小企业提供客户关系管理(CRM)和销售管理解决方案。</p>
+      </div>
+      <div className="icons">
+        <div className="items">
+          <div className="item">
+            <img src={Icon1} style={{ width: vw(46) }} alt="" />
+            <span>财务管理</span>
+          </div>
+          <div className="item">
+            <img src={Icon2} style={{ width: vw(46) }} alt="" />
+            <span>库存管理</span>
+          </div>
+        </div>
+        <div className="items">
+          <div className="item">
+            <img src={Icon3} style={{ width: vw(46) }} alt="" />
+            <span>ERP接口</span>
+          </div>
+          <div className="item">
+            <img src={Icon4} style={{ width: vw(46) }} alt="" />
+            <span>项目管理 </span>
+          </div>
+        </div>
+        <div className="items">
+          <div className="item">
+            <img src={Icon5} style={{ width: vw(46) }} alt="" />
+            <span>采购管理</span>
+          </div>
+          <div className="item">
+            <img src={Icon6} style={{ width: vw(46) }} alt="" />
+            <span>呼叫中心</span>
+          </div>
+        </div>
+        <div className="items">
+          <div className="item">
+            <img src={Icon7} style={{ width: vw(46) }} alt="" />
+            <span>平台管理</span>
+          </div>
+          <div className="item">
+            <img src={Icon8} style={{ width: vw(46) }} alt="" />
+            <span>企业微信</span>
+          </div>
+        </div>
+        <div className="items">
+          <div className="item">
+            <img src={Icon9} style={{ width: vw(46) }} alt="" />
+            <span>OA审批</span>
+          </div>
+          <div className="item">
+            <img src={Icon10} style={{ width: vw(46) }} alt="" />
+            <span>售后管理</span>
+          </div>
+        </div>
+      </div>
+    </DevelopDiv>
   </div>
 ));
 
