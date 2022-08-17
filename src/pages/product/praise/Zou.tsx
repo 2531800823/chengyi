@@ -9,7 +9,7 @@ import {
 import { vw } from '@/utils';
 import { Carousel } from '@arco-design/mobile-react';
 import { useRequest } from 'ahooks';
-import { FC, useRef, MouseEvent, memo } from 'react';
+import { FC, useRef, MouseEvent, memo, Fragment } from 'react';
 
 import Left from '@/assets/images/3-产品服务/2-口碑营销/epr流量矩阵/右箭头.png';
 import Right from '@/assets/images/3-产品服务/2-口碑营销/epr流量矩阵/左箭头.png';
@@ -90,10 +90,10 @@ const Zou: FC<ZouProps> = memo(() => {
                   <img src={item.url[2]} alt="" />
                   <div className="text">
                     {item.text.map((ites, index) => (
-                      <>
+                      <Fragment key={index}>
                         {index !== 0 && <div />}
                         <h3>{ites}</h3>
-                      </>
+                      </Fragment>
                     ))}
                   </div>
                 </ZouShow>
