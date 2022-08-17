@@ -54,10 +54,10 @@ const XinWen: FC<XinWenProps> = memo(() => {
             <div key={i} style={{ width: '100%' }}>
               {Array(4)
                 .fill(0)
-                .map((item, index) => (
+                .map((_, index) => (
                   <XinWenItemDiv key={index}>
                     <img src={Img} alt="" />
-                    <div>
+                    <div className="text-title">
                       <h3>
                         24 <span> / Jul./2022</span>
                       </h3>

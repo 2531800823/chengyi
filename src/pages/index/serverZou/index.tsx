@@ -58,7 +58,11 @@ const ProServe: FC<ProServeProps> = memo(() => {
             <ZouDiv key={item.id}>
               <BoxShoadow>
                 <ImgDiv>
-                  <img src={item.url} style={{ width: vw(345) }} alt="" />
+                  <img
+                    src={item.url}
+                    style={{ width: vw(345), height: '100%' }}
+                    alt=""
+                  />
                   <img
                     src={item.url2}
                     style={{

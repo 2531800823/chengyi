@@ -17,7 +17,6 @@ export const TabDiv = styled.div<{ active: boolean }>`
 
 export const XinWenItemDiv = styled.div`
   width: 100%;
-  height: ${vw(240)};
   border-top: ${vw(1)} solid #4f85f4;
   padding: ${vw('28 0')};
   display: flex;
@@ -26,11 +25,16 @@ export const XinWenItemDiv = styled.div`
     border-bottom: ${vw(1)} solid #4f85f4;
   }
 
-  div {
-    margin-left: ${vw(30)};
+  .text-title {
+    padding-left: ${vw(30)};
+    overflow: hidden;
+    flex: 1;
   }
 
   p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     margin-top: ${vw(15)};
     margin-bottom: ${vw(20)};
     font-size: ${vw(30)};
@@ -58,6 +62,5 @@ export const XinWenItemDiv = styled.div`
   }
   img {
     width: ${vw(280)};
-    height: ${vw(180)};
   }
 `;

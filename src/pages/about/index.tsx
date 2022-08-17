@@ -35,7 +35,7 @@ const Aboout: FC<AbooutProps> = memo(() => {
             <p>SPIRT</p>
             <p>VALUES</p>
           </div>
-          <img src={Img8} style={{ width: vw(30), height: vw(1055) }} alt="" />
+          <img src={Img8} style={{ width: vw(30) }} alt="" />
           <div className="right">
             <div>
               <h3>企业愿景</h3>

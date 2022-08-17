@@ -16,7 +16,7 @@ export const Wapper = styled.div`
       font-size: ${vw(30)};
 
       p {
-        margin-top: ${vw(165)};
+        margin-top: ${vw(170)};
         &:nth-of-type(1) {
           margin-top: 0;
         }
@@ -56,7 +56,6 @@ export const YeWuDiv = styled.div`
     .text-item {
       position: relative;
       width: ${vw(320)};
-      height: ${vw(540)};
       border-radius: ${vw(15)};
       background-color: #f3f7fd;
       padding: ${vw('75 45 0')};

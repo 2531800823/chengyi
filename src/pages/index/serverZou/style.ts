@@ -48,11 +48,11 @@ export const TextDiv = styled.div`
     display: flex;
     flex: 1;
     img {
-      padding: ${vw('60 0')};
+      padding: ${vw('45 0')};
       box-sizing: content-box;
     }
     div {
-      padding: ${vw('60 0')};
+      padding: ${vw('45 0')};
       margin-left: ${vw(20)};
       display: block;
     }
