@@ -54,9 +54,9 @@ export const menuStatic = [
     name: '产品服务',
     key: '/product',
     children: [
-      { name: '推广托管', key: '/promotion' },
-      { name: '口碑营销', key: '/praise' },
-      { name: '系统开发', key: '/develop' }
+      { name: '推广托管', key: '/product' },
+      { name: '口碑营销', key: '/product' },
+      { name: '系统开发', key: '/product' }
     ]
   },
   { name: '关于澄易', key: '/about' },

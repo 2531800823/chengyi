@@ -31,7 +31,7 @@ const Item: FC<ItemProps> = memo((props) => {
   const state = useContext(NarBarData);
 
   const handleClick = () => {
-    item?.children?.length > 0 || state?.setIsShowNar(false);
+    state?.setIsShowNar(false);
     history.push(item.key);
     setActive && setActive(item.name);
   };
