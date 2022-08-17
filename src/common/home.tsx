@@ -52,6 +52,7 @@ export const menuStatic = [
   { name: '体验咨询', key: '/experience' },
   {
     name: '产品服务',
+    key: '/product',
     children: [
       { name: '推广托管', key: '/promotion' },
       { name: '口碑营销', key: '/praise' },
