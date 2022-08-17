@@ -8,14 +8,16 @@ export const ZouServer = styled.div`
   z-index: 1;
 `;
 
-export const ZouDiv = styled.div`
+export const ZouDiv = styled.div<{ num: string }>`
   width: 100%;
-  padding: ${vw('50 100 150')};
-  height: ${vw(1270)};
+  padding: ${vw(`0 100 0`)};
+  padding-top: ${(props) => props.num};
+  padding-bottom: ${(props) => props.num};
 `;
 export const BoxShoadow = styled.div`
   display: flex;
   border-radius: ${vw(30)};
+  overflow: hidden;
 
   box-shadow: 0.8px 0.4px 2.2px rgba(0, 0, 0, -0.014),
     2px 0.9px 5.3px rgba(0, 0, 0, -0.019),

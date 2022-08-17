@@ -45,9 +45,9 @@ const Product: FC<ProductProps> = memo(() => {
             ))}
           </div>
         )}>
-        <Develop />
-        <Praise />
-        <Promotion />
+        {[<Develop />, <Praise />, <Promotion />].map((Com, i) =>
+          i === active ? Com : null
+        )}
       </Tabs>
     </div>
   );

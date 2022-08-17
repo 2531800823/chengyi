@@ -14,6 +14,22 @@ import Yl1 from '@/assets/images/4-产品服务/引流-垂直平台.png';
 import Yl2 from '@/assets/images/4-产品服务/引流-新媒体营销.png';
 import Yl3 from '@/assets/images/4-产品服务/引流-线上epr品宣.png';
 
+import Tou1 from '@/assets/images/3-产品服务/2-口碑营销/epr流量矩阵/头条-02.png';
+import Tou2 from '@/assets/images/3-产品服务/2-口碑营销/epr流量矩阵/头条-bg.png';
+import Tou3 from '@/assets/images/3-产品服务/2-口碑营销/epr流量矩阵/头条-icon.png';
+import Xiao1 from '@/assets/images/3-产品服务/2-口碑营销/epr流量矩阵/小红书-03.png';
+import Xiao2 from '@/assets/images/3-产品服务/2-口碑营销/epr流量矩阵/小红书-bg.png';
+import Xiao3 from '@/assets/images/3-产品服务/2-口碑营销/epr流量矩阵/小红书-icon.png';
+import Dou1 from '@/assets/images/3-产品服务/2-口碑营销/epr流量矩阵/抖音-01.png';
+import Dou2 from '@/assets/images/3-产品服务/2-口碑营销/epr流量矩阵/抖音-bg.png';
+import Dou3 from '@/assets/images/3-产品服务/2-口碑营销/epr流量矩阵/抖音-icon.png';
+
+import D1 from '@/assets/images/3-产品服务/2-口碑营销/epr流量矩阵/D1.png';
+import T1 from '@/assets/images/3-产品服务/2-口碑营销/epr流量矩阵/T1.png';
+import X1 from '@/assets/images/3-产品服务/2-口碑营销/epr流量矩阵/X1.png';
+
+import test from '@/assets/images/3-产品服务/2-口碑营销/epr流量矩阵/test.png';
+
 import { v4 } from 'uuid';
 export const HomeZouStatic = [
   {
@@ -93,5 +109,29 @@ export const HomeZouStatic = [
         detail: '根据各类账号数据分析结果，进行账号策略及内容持续优化更新。'
       }
     ]
+  }
+];
+
+export const KbZouStatic = [
+  {
+    id: v4(),
+    url: [Dou2, Dou1, Dou3],
+    url2: D1,
+    url2Style: 162,
+    text: ['内容策划 & 创意输出', '拍摄制作', '抖音IP矩阵打造']
+  },
+  {
+    id: v4(),
+    url: [Tou2, Tou1, Tou3],
+    url2: T1,
+    url2Style: 162,
+    text: ['强力种草', '强势曝光', '流量阵地']
+  },
+  {
+    id: v4(),
+    url2: X1,
+    url2Style: 250,
+    url: [test, Xiao1, Xiao3],
+    text: ['KOC+KOL+素人多维宣传', '提高品牌话题与热度', '强效背书，提高转化率']
   }
 ];

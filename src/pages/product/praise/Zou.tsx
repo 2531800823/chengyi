@@ -1,20 +1,24 @@
-import { MyText } from '@/components/text';
-import { FC, useRef, MouseEvent, memo } from 'react';
-
-import Font from '@/assets/images/4-产品服务/font.png';
+import { HomeNav } from '@/components/Zoumadeng/style';
+import {
+  BoxShoadow,
+  ImgDiv,
+  TextDiv,
+  ZouDiv,
+  ZouServer
+} from '@/pages/index/serverZou/style';
 import { vw } from '@/utils';
 import { Carousel } from '@arco-design/mobile-react';
-import { HomeNav } from '@/components/Zoumadeng/style';
-import { BoxShoadow, ImgDiv, TextDiv, ZouDiv, ZouServer } from './style';
 import { useRequest } from 'ahooks';
+import { FC, useRef, MouseEvent, memo } from 'react';
 
-import Left from '@/assets/images/4-产品服务/右箭头.png';
-import Right from '@/assets/images/4-产品服务/左箭头.png';
-import { HomeZouStatic } from '@/common';
+import Left from '@/assets/images/3-产品服务/2-口碑营销/epr流量矩阵/右箭头.png';
+import Right from '@/assets/images/3-产品服务/2-口碑营销/epr流量矩阵/左箭头.png';
+import { KbZouStatic } from '@/common';
+import { ZouShow } from './style';
 
-interface ProServeProps {}
+interface ZouProps {}
 
-const ProServe: FC<ProServeProps> = memo(() => {
+const Zou: FC<ZouProps> = memo(() => {
   const current = useRef(0);
 
   const carouselRef = useRef<any>(null);
@@ -42,8 +46,6 @@ const ProServe: FC<ProServeProps> = memo(() => {
   });
   return (
     <div style={{ position: 'relative' }}>
-      <MyText url={Font} width={435} height={140} />
-
       <ZouServer>
         <Carousel
           ref={carouselRef as any}
@@ -54,46 +56,47 @@ const ProServe: FC<ProServeProps> = memo(() => {
             current.current = index;
             console.log(index);
           }}>
-          {HomeZouStatic.map((item, index) => (
-            <ZouDiv num={vw(50)} key={item.id}>
+          {KbZouStatic.map((item, index) => (
+            <ZouDiv num="0" key={item.id}>
               <BoxShoadow>
                 <ImgDiv>
                   <img
-                    src={item.url}
-                    style={{ width: vw(345), height: '100%' }}
+                    src={item.url[0]}
+                    style={{ width: vw(345), height: vw(1072) }}
                     alt=""
                   />
                   <img
                     src={item.url2}
                     style={{
                       width: vw(item.url2Style),
-                      height: vw(830),
+                      height: vw(120),
                       position: 'absolute',
                       left: vw(66),
-                      top: vw(88)
+                      bottom: vw(140)
                     }}
                     alt=""
                   />
                 </ImgDiv>
-                <TextDiv>
-                  {item.text.map((ites, index) => (
-                    <div key={ites.id}>
-                      <img
-                        src={ites.url}
-                        alt=""
-                        style={{ width: vw(60), height: vw(58) }}
-                      />
-                      <div
-                        style={{
-                          borderBottom:
-                            index !== 2 ? `${vw(2)} solid #E4E4E4` : 'none'
-                        }}>
-                        <h3>{ites.text}</h3>
-                        <p>{ites.detail}</p>
-                      </div>
-                    </div>
-                  ))}
-                </TextDiv>
+                <ZouShow>
+                  <img
+                    src={item.url[1]}
+                    style={{
+                      position: 'absolute',
+                      bottom: 0,
+                      right: vw(100)
+                    }}
+                    alt=""
+                  />
+                  <img src={item.url[2]} alt="" />
+                  <div className="text">
+                    {item.text.map((ites, index) => (
+                      <>
+                        {index !== 0 && <div />}
+                        <h3>{ites}</h3>
+                      </>
+                    ))}
+                  </div>
+                </ZouShow>
               </BoxShoadow>
             </ZouDiv>
           ))}
@@ -107,4 +110,4 @@ const ProServe: FC<ProServeProps> = memo(() => {
   );
 });
 
-export default ProServe;
+export default Zou;
