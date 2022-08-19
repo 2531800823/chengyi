@@ -120,7 +120,7 @@ const Aboout: FC<AbooutProps> = memo(() => (
         shape="round"
         style={{ margin: vw('40 0 115 0'), width: vw(390) }}
         onClick={() => {
-          history.push('/promotion');
+          history.push('/product');
         }}>
         了解更多
       </Button>
