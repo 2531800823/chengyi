@@ -1,5 +1,5 @@
 import { FC, memo } from 'react';
-import { DianNDiv, MeiTiDiv, Warpper } from './style';
+import { DianNDiv, MeiTiDiv, RightDiv, Warpper } from './style';
 import { MyText } from '@/components/text';
 import { vw } from '@/utils';
 
@@ -9,6 +9,7 @@ import Font3 from '@/assets/images/3-产品服务/2-口碑营销/KbFont3.png';
 import Icon1 from '@/assets/images/3-产品服务/2-口碑营销/1-媒体发布/1-1.png';
 import Icon2 from '@/assets/images/3-产品服务/2-口碑营销/1-媒体发布/1-2.png';
 import Icon3 from '@/assets/images/3-产品服务/2-口碑营销/1-媒体发布/1-3.png';
+import Img1 from '@/assets/images/3-产品服务/2-口碑营销/img.png';
 import Zou from './Zou';
 import { Button } from '@arco-design/mobile-react';
 
@@ -77,6 +78,7 @@ const Praise: FC<PraiseProps> = memo(() => (
             立即咨询
           </Button>
         </div>
+        <RightDiv url={Img1}></RightDiv>
       </DianNDiv>
     </div>
   </Warpper>

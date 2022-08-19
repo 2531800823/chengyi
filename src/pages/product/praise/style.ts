@@ -72,6 +72,9 @@ export const ZouShow = styled.div`
 export const DianNDiv = styled.div`
   margin-left: ${vw(100)};
   margin-bottom: ${vw(50)};
+
+  display: flex;
+
   .left {
     width: ${vw(475)};
     .top {
@@ -104,4 +107,11 @@ export const DianNDiv = styled.div`
       height: ${vw(50)};
     }
   }
+`;
+
+export const RightDiv = styled.div<{ url: string }>`
+  flex: 1;
+  margin-top: ${vw(60)};
+  background: url(${(props) => props.url}) no-repeat;
+  background-size: cover;
 `;
