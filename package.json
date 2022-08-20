@@ -21,7 +21,6 @@
   },
   "dependencies": {
     "@ant-design/pro-layout": "^6.5.0",
-    "@arco-design/mobile-react": "^2.19.1",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "add": "^2.0.6",
