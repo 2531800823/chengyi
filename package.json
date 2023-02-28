@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@ant-design/pro-layout": "^6.5.0",
+    "@arco-design/mobile-react": "^2.25.4",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "add": "^2.0.6",
@@ -37,7 +38,6 @@
     "@types/react-dom": "^17.0.0",
     "@types/uuid": "^8.3.4",
     "@umijs/plugin-antd-mobile": "^1.2.0",
-    "@umijs/test": "^3.5.32",
     "amfe-flexible": "^2.2.1",
     "lint-staged": "^10.0.7",
     "postcss-px-to-viewport": "^1.1.1",

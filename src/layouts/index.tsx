@@ -1,7 +1,6 @@
 import { FC, ReactNode, useEffect, memo, useState, createContext } from 'react';
 import 'amfe-flexible';
 import { useScroll } from 'ahooks';
-import Arco from '@arco-design/mobile-react';
 import '@arco-design/mobile-react/esm/style';
 
 import { Header, Footer, ScrollTop, NavBar, Zoumadeng } from '@/components';
